@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm install --include=devs
+      - run: npm install --include=dev
       - run: npx vite build
       - uses: actions/upload-pages-artifact@v3
         with:
